@@ -10,6 +10,10 @@ class Runner extends Player {
         parent::__construct($name);
         $this->age = $age;
     }
+    //override
+    public function who() {
+        echo "{$this->name}, {$this->age}desu", "\n";
+    }
 
     //instance method
     public function play() {
