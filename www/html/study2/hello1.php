@@ -1,3 +1,4 @@
 <?php
-  echo 'hello';
+  $boolean = (bool)1;
+  var_dump($boolean);
 ?>
