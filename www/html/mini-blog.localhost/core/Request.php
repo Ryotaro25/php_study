@@ -118,14 +118,15 @@ class Request
     public function getPathInfo()
     {
         $base_url = $this->getBaseUrl();
+        
         $request_uri = $this->getRequestUri();
-
+        
         if (false !== ($pos = strpos($request_uri, '?'))) {
             $request_uri = substr($request_uri, 0, $pos);
+            
         }
 
         $path_info = (string)substr($request_uri, strlen($base_url));
-
         return $path_info;
     }
 }

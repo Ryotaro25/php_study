@@ -52,6 +52,7 @@ abstract class Application
         $this->session    = new Session();
         $this->db_manager = new DbManager();
         $this->router     = new Router($this->registerRoutes());
+        
     }
 
     /**
@@ -162,7 +163,7 @@ abstract class Application
      */
     public function getWebDir()
     {
-        return $this->getRootDir() . '/web';
+        return $this->getRootDir() . '/mini-blog.localhost/web';
     }
 
     /**
